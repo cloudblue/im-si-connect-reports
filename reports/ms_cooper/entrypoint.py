@@ -24,7 +24,7 @@ ASSET_ITEM = []
 
 PRODUCTS = []
 
-# Microsoft Vendor ID
+# IMC Gamma Team Vendor Vendor ID
 VENDOR = "VA-610-138"
 
 def generate(
@@ -197,7 +197,7 @@ def get_product_specifics(subscription, client):
         "microsoft_plan_subscription_id": "-",
         "microsoft_tier1_mpn": "-",
     }
-    if subscription["connection"]["vendor"]["id"] == "VA-888-104":
+    if subscription["connection"]["vendor"]["id"] == VENDOR:
         values["microsoft_domain"] = get_sub_parameter(subscription, "microsoft_domain")
         sub_id = get_sub_parameter(subscription, "subscription_id")
         if sub_id == "-":
