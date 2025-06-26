@@ -25,7 +25,7 @@ ASSET_ITEM = []
 PRODUCTS = []
 
 # Microsoft Vendor ID
-VENDOR = "VA-888-104"
+VENDOR = "VA-610-138"
 
 def generate(
         client=None,
